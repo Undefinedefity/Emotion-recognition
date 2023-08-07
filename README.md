@@ -28,11 +28,43 @@ Emotion recognition is a technique used in software that allows a program to "re
 <a id="p2"></a> 
 # Installations:
 
-Install dependencies using requirements.txt
+Create a conda env
 
 ```shell
-pip install -r requirements.txt
+conda create -n emotion_rec python=3.8
+conda activate emtion_rec
 ```
+
+## If have a gpu
+If you have a gpu, first run, otherwise just skip
+
+```shell
+conda install tensorflow-gpu
+```
+Install dependencies using `requirements_gpu.txt`. 
+
+```shell
+conda install --yes --file requirements.txt
+
+# or use pip install (recommended)
+pip install -r requirements.txt
+# when in China using pip install too slow, try with a specific source like tsinghua, or any others
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+## Don't have a gpu
+Install dependencies using `requirements.txt`. 
+
+```shell
+conda install --yes --file requirements.txt
+
+# or use pip install (recommended)
+pip install -r requirements.txt
+# when in China using pip install too slow, try with a specific source like tsinghua, or any others
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+
 
 <a id="p3"></a> 
 # Usage:
@@ -41,7 +73,9 @@ The program will creat a window to display the scene capture by webcamera and a 
 
 > Demo
 
+```shell
 python real_time_video.py
+```
 
 You can just use this with the provided pretrained model i have included in the path written in the code file, i have choosen this specificaly since it scores the best accuracy, feel free to choose any but in this case you have to run the later file train_emotion_classifier
 > If you just want to run this demo, the following content can be skipped
