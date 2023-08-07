@@ -32,7 +32,7 @@ Create a conda env
 
 ```shell
 conda create -n emotion_rec python=3.8
-conda activate emtion_rec
+conda activate emotion_rec
 ```
 
 ## If have a gpu
@@ -105,3 +105,8 @@ Draw emotions faces next to the detected face.
 If any issues and suggestions to me, you can create an [issue](https://github.com/omar178/Emotion-recognition/issues).
 
 If you like this work please help me by giving me some stars.
+
+# Other similar projects
+1. https://github.com/susantabiswas/realtime-facial-emotion-analyzer
+2. https://github.com/udaram/Real-Time-Facial-Expression-Recognition
+3. https://github.com/atulapra/Emotion-detection
